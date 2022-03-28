@@ -1,0 +1,33 @@
+@use '../../styles/global-styles.scss' as *;
+
+.container {
+  background-color: var(--color-blue);
+  border-radius: var(--border-radius);
+  color: var(--color-white);
+  transition: var(--transition) background-color;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.8px;
+  font-size: 16px;
+
+  @include hover {
+    background-color: var(--color-blue-darkened);
+  }
+}
+
+.medium {
+  padding: 20px;
+}
+
+.small {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.auto {
+  width: auto;
+}
+
+.full {
+  width: 100%;
+}

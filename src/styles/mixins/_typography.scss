@@ -1,0 +1,7 @@
+@use '_support.scss' as *;
+
+@mixin a {
+	@include hover {
+		color: var(--color-blue-darkened);
+	}
+}

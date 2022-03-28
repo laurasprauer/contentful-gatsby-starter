@@ -1,0 +1,20 @@
+// Media queries set variables
+$smallest: 0;
+$x-small-lowest: 360px;
+$x-small: 400px;
+$x-small-highest: 480px;
+$small-lowest: 600px;
+$small: 720px;
+$small-highest: 840px;
+$medium-lowest: 960px;
+$medium: 1040px;
+$medium-highest: 1140px;
+$large-lowest: 1280px;
+$large: 1440px;
+$large-highest: 1600px;
+$x-large-lowest: 1920px;
+$x-large: 2560px;
+$x-large-highest: 3360px;
+
+// When the application show desktop styles
+$full-navigation: $medium;

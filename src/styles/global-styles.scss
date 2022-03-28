@@ -1,0 +1,59 @@
+@use 'variables' as *;
+@use './mixins/font' as *;
+@use './mixins/media' as *;
+@use './mixins/reset' as *;
+@use './mixins/support' as *;
+@use './mixins/typography' as *;
+
+@forward './mixins/font';
+@forward './mixins/media';
+@forward './mixins/reset';
+@forward './mixins/support';
+@forward './mixins/typography';
+
+// --------------------------------------------------------
+
+@mixin font-smoothing {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	@include font-smoothing;
+	margin: 0;
+	padding: 0;
+
+	color: var(--color-black);
+	font-family: var(--font-family-base);
+	font-size: var(--font-size-base);
+	font-weight: var(--font-weight-regular);
+	line-height: 1.8;
+	font-weight: var(--font-weight-light);
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+
+	@include hover {
+		text-decoration: underline;
+	}
+}
+
+strong {
+	font-weight: 700;
+}
+
+button {
+	@include reset-button;
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+}

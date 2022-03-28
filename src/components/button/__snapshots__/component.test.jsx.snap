@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Default button renders correctly 1`] = `
+<button
+  className="
+		undefined
+		undefined
+		undefined
+	"
+  type="button"
+>
+  Button Text
+</button>
+`;
